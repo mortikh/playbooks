@@ -1,0 +1,12 @@
+---
+
+- name: Mysql server installation
+  hosts: localhost
+  become: true
+
+  tasks:
+
+    - name: Installing Mysql server via apt
+      apt:
+        name:
+          - mysql-server
